@@ -3,9 +3,38 @@ import "./App.css";
 import Movies from "./Movies.js";
 import PageWrapper from "./PageWrapper.js";
 import moviesJSON from "./movies.json";
+import Paginacion from "./Paginacion";
+import { useState } from "react";
 
 function App() {
+  const [paginaActual, setPaginaActual] = useState(1);
+
   let arrayMovies = moviesJSON;
+
+  const cargarPeliculas = () =>{
+    arrayMovies = arrayMovies.slice((paginaActual - 1) * 5, paginaActual * 5);
+  }
+
+  const getTotalPaginas = () =>{
+    let cantidadPeliculasJSON = moviesJSON.length;
+    return Math.ceil(cantidadPeliculasJSON / 5);
+  }
+
+  const buscarPeliculas = async() => {
+    let url  = "https://lucasmoy.dev/data/react/peliculas.json";
+
+    let respuesta = await fetch(url,{
+      "method":"GET",
+      "headers":{
+        "Accept":"aplication/JSON",
+        "Content-Type":"application/JSON"
+      }
+    });
+    let json = await respuesta.json();
+    alert(json);
+  }
+  buscarPeliculas();
+  cargarPeliculas();
 
   return (
     <PageWrapper>
@@ -25,6 +54,14 @@ function App() {
           img={movie.img}
         />
       ))}
+
+      <Paginacion
+        pagina={paginaActual}
+        total={getTotalPaginas()}
+        onChange={(pagina) => {
+          setPaginaActual(pagina);
+        }}
+      ></Paginacion>
     </PageWrapper>
   );
 }
