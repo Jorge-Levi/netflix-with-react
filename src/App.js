@@ -234,17 +234,7 @@ function App() {
                   <a href="movielist_light.html" className="list"><i className="ion-ios-list-outline active" /></a>
                   <a href="moviegrid_light.html" className="grid"><i className="ion-grid" /></a>
                 </div>
-                <div className="movie-item-style-2">
-                  <img src="images/uploads/mv1.jpg" alt />
-                  <div className="mv-item-infor">
-                    <h6><a href="moviesingle_light.html">oblivion <span>(2012)</span></a></h6>
-                    <p className="rate"><i className="ion-android-star" /><span>8.1</span> /10</p>
-                    <p className="describe">Earth's mightiest heroes must come together and learn to fight as a team if they are to stop the mischievous Loki and his alien army from enslaving humanity...</p>
-                    <p className="run-time"> Run Time: 2h21’    .     <span>MMPA: PG-13 </span>    .     <span>Release: 1 May 2015</span></p>
-                    <p>Director: <a href="#">Joss Whedon</a></p>
-                    <p>Stars: <a href="#">Robert Downey Jr.,</a> <a href="#">Chris Evans,</a> <a href="#">  Chris Hemsworth</a></p>
-                  </div>
-                </div>
+                <movies>
                 <div className="movie-item-style-2">
                   <img src="images/uploads/mv2.jpg" alt />
                   <div className="mv-item-infor">
@@ -367,7 +357,7 @@ function App() {
                   </div>
                   <div className="sb-facebook sb-it">
                     <h4 className="sb-title">Find us on Facebook</h4>
-                    <iframe src="#" data-src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Ftemplatespoint.net%2F%3Ffref%3Dts&tabs=timeline&width=340&height=315px&small_header=true&adapt_container_width=false&hide_cover=false&show_facepile=true&appId" height={315} style={{ width: '100%', border: 'none', overflow: 'hidden' }} />
+                    {/* <iframe src="#" data-src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Ftemplatespoint.net%2F%3Ffref%3Dts&tabs=timeline&width=340&height=315px&small_header=true&adapt_container_width=false&hide_cover=false&show_facepile=true&appId" height={315} style={{ width: '100%', border: 'none', overflow: 'hidden' }} /> */}
                   </div>
                   <div className="sb-twitter sb-it">
                     <h4 className="sb-title">Tweet to us</h4>
