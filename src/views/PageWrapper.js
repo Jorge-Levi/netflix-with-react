@@ -282,13 +282,13 @@ export default function PageWrapper(props) {
                   </a>
                   <ul className="dropdown-menu level1">
                     <li>
-                      <a href="bloglist_light.html">blog List</a>
+                      <a href="./Blog.js">blog List</a>
                     </li>
                     <li>
-                      <a href="bloggrid_light.html">blog Grid</a>
+                      <a href="./Blog.js">blog Grid</a>
                     </li>
                     <li className="it-last">
-                      <a href="blogdetail_light.html">blog Detail</a>
+                      <a href="./Blog.js">blog Detail</a>
                     </li>
                   </ul>
                 </li>

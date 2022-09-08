@@ -104,55 +104,55 @@ $(function(){
 	var deadline = new Date(Date.parse(new Date()) + 25 * 24 * 60 * 60 * 1000);
 	initializeClock('clockdiv', deadline);
 
-	//js for twitter
-	var tweets = jQuery(".tweet");
-	jQuery(tweets).each( function( t, tweet ) { 
-    var id = jQuery(this).attr('id');
-    twttr.widgets.createTweet(
-      id, tweet, 
-      {
-        conversation : 'none',    // or all
-        cards        : 'hidden',  // or visible 
-        linkColor    : 'default', // default is blue
-        theme        : 'light'    // or dark
-      });
-    }); 
+	// //js for twitter
+	// var tweets = jQuery(".tweet");
+	// jQuery(tweets).each( function( t, tweet ) { 
+    // var id = jQuery(this).attr('id');
+    // twttr.widgets.createTweet(
+    //   id, tweet, 
+    //   {
+    //     conversation : 'none',    // or all
+    //     cards        : 'hidden',  // or visible 
+    //     linkColor    : 'default', // default is blue
+    //     theme        : 'light'    // or dark
+    //   });
+    // }); 
 
-	//slider for movie and tv show home 2
-	multiItem2.slick({
-		infinite: true,
-		slidesToShow: 6,
-		slidesToScroll: 6,
-		arrows: false,
-		// autoplay: true ,
-		// autoplaySpeed: 2000,
-		dots: true,
-		responsive: [
-	    {
-	      breakpoint: 1200,
-	      settings: {
-	        slidesToShow: 3,
-	        slidesToScroll: 3,
-	        infinite: true,
-	        dots: true
-	      }
-	    },
-	    {
-	      breakpoint: 768,
-	      settings: {
-	        slidesToShow: 3,
-	        slidesToScroll: 3
-	      }
-	    },
-	    {
-	      breakpoint: 480,
-	      settings: {
-	        slidesToShow: 1,
-	        slidesToScroll: 1
-	      }
-	    }
-	  ]
-	});
+	// //slider for movie and tv show home 2
+	// multiItem2.slick({
+	// 	infinite: true,
+	// 	slidesToShow: 6,
+	// 	slidesToScroll: 6,
+	// 	arrows: false,
+	// 	// autoplay: true ,
+	// 	// autoplaySpeed: 2000,
+	// 	dots: true,
+	// 	responsive: [
+	//     {
+	//       breakpoint: 1200,
+	//       settings: {
+	//         slidesToShow: 3,
+	//         slidesToScroll: 3,
+	//         infinite: true,
+	//         dots: true
+	//       }
+	//     },
+	//     {
+	//       breakpoint: 768,
+	//       settings: {
+	//         slidesToShow: 3,
+	//         slidesToScroll: 3
+	//       }
+	//     },
+	//     {
+	//       breakpoint: 480,
+	//       settings: {
+	//         slidesToShow: 1,
+	//         slidesToScroll: 1
+	//       }
+	//     }
+	//   ]
+	// });
 	//slider movie and tv show home 1, 3
 	multiItem.slick({
 		infinite: true,
